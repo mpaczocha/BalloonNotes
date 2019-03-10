@@ -1,0 +1,6 @@
+Options -Indexes
+
+
+:Location /*.php
+Use php72
+:Location

@@ -1,0 +1,358 @@
+html{
+  position: relative;
+  min-height: 100%;
+}
+
+/* Background Image */
+body{
+    background: url("images/image.jpg") no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arvo, serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-color: transparent;
+    text-align: center;
+    margin-top: 80px;
+    letter-spacing: 2.5px;
+    padding: 10px;
+    color: white;
+}
+
+/* Buttons */
+.signup{
+  margin-top: 60px;
+  letter-spacing: 2px;
+  color: black;
+  border: 1px solid white;
+}
+
+.green{
+  background-color: rgba(114,190,35,0.7);
+}
+.green:hover{
+  background-color: rgb(114,190,35);
+}
+
+/* Modals */
+.modal{
+  margin-top: 60px;
+}
+
+/* Navigation bar */
+.navbar-custom, .footer {
+  /* background-color: #203262; */
+  border-color: #182549;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#2d4688), to(#203262));
+  background-image: -webkit-linear-gradient(top, #2d4688, 0%, #203262, 100%);
+  background-image: -moz-linear-gradient(top, #2d4688 0%, #203262 100%);
+  background-image: linear-gradient(to bottom, #2d4688 0%, #203262 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2d4688', endColorstr='#ff203262', GradientType=0);
+}
+.navbar-custom .navbar-brand {
+  color: #ffffff;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #ffffff;
+}
+.navbar-custom .navbar-nav > li:last-child > a {
+  border-right: 1px solid #182549;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #ffffff;
+  border-left: 1px solid #182549;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #334e99;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #182549;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#182549), to(#24396f));
+  background-image: -webkit-linear-gradient(top, #182549, 0%, #24396f, 100%);
+  background-image: -moz-linear-gradient(top, #182549 0%, #24396f 100%);
+  background-image: linear-gradient(to bottom, #182549 0%, #24396f 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff182549', endColorstr='#ff24396f', GradientType=0);
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #172447;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #182549;
+  color: #ffffff;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+@media (max-width: 767) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #182549;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #ffffff;
+}
+.navbar-custom .navbar-link:hover {
+  color: #ffffff;
+}
+
+/* Memory Game page */
+.game-container {
+  margin: 60px auto 20px auto;
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+  color: white;
+}
+
+.game-title{
+  padding-bottom: 5px;
+  color: white;
+}
+
+.game-title > h1{
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.game-board {
+  margin:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 484px;
+  height: 388px;
+  border: 2px solid #19284E;
+  border-radius: 5px;
+}
+
+.game-tile {
+  position: absolute;
+  cursor: pointer;
+  width: 90px;
+  height: 90px;
+  background: rgba(255,255,255, 0.2) url(images/tile.png) center center no-repeat;
+  background-size: 80px 80px;
+  border: 2px solid #19284E;
+  border-radius: 5px;
+}
+
+.game-tile:hover {
+  border-color: #fff;
+}
+
+.game-scores {
+  margin: 10px auto;
+  width: 492px;
+  font-size: 18px;
+}
+
+.moves{
+  width: 80px;
+  float: left;
+  padding: 5px 0px 5px 10px;
+  text-align: left;
+}
+
+.bestScore{
+  width: 160px;
+  float: left;
+  padding: 5px 0px 5px 10px;
+  text-align: left;
+}
+
+#movesValue, #bestScoreValue{
+  width: 50px;
+  float: left;
+  text-align: center;
+  padding: 5px 10px;
+  font-weight: 700;
+  background-color: #19284E;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.game-start{
+  width: 130px;
+  float: left;
+  margin: auto;
+  height: 36px;
+  cursor: pointer;
+  font-size: 18px;
+  color: black;
+  margin-left: 10px;
+  border: 1px solid white;
+}
+
+@media only screen and (max-width: 576px) {
+  .game-container {
+    margin: 60px auto 20px auto;
+  }
+
+  .game-board {
+    width: 360px;
+    height: 288px;
+  }
+  
+  .game-tile {
+    width: 65px;
+    height: 65px;
+    background-size: 60px 60px;
+  }
+
+  .game-scores {
+    width: 350px;
+    font-size: 12px;
+  }
+  
+  .moves{
+    width: 50px;
+  }
+  
+  .bestScore{
+    width: 130px;
+  }
+  
+  #movesValue, #bestScoreValue{
+    width: 25px
+  }
+  
+  .game-start{
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+      width: 100%;
+  }
+}
+
+/* Contact us form */
+.form-container{
+  margin: 60px auto 20px auto;
+  color: white;
+}
+
+.btn-send {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.form-container h4{
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.text-muted{
+  color: white;
+}
+
+.help-block{
+  color: red !important;
+  font-weight: 500 !important;
+}
+
+textarea{
+  resize: vertical;
+}
+
+/* Footer */
+.footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  color: white;
+  height: 25px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.footer p{
+  margin: 0 0;
+  height: 25px;
+}
+
+.footer a{
+  color: white;
+  text-decoration: none;
+}
+.fb:hover{
+  background-color: #4668b3;
+}
+.github:hover{
+  background-color: #24292E;
+}
+.linkedin:hover{
+  background-color: #0073B0;
+}
+
+
